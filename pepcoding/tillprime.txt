@@ -1,0 +1,49 @@
+Scanner scn = new Scanner(System.in);
+    int low = scn.nextInt();
+    //System.out.println("enter low " + low);
+    int high = scn.nextInt();
+    //System.out.println("enter high " + high);
+    for (int i = low; i <= high; i++) {
+      int div = 2;
+      boolean isprime = true;
+      while (div * div <= i) {
+
+        if (i % div == 0) {
+          isprime = false;
+          break;
+        }
+        div++;
+
+      }
+      if (isprime == true) {
+        System.out.println(i);
+      }
+
+
+    }
+
+
+//another approch 
+
+Scanner scn = new Scanner(System.in);
+    int low = scn.nextInt();
+    //System.out.println("enter low " + low);
+    int high = scn.nextInt();
+    //System.out.println("enter high " + high);
+    for (int i = low; i <= high; i++) {
+      int div = 2;
+    
+      while (div * div <= i) {
+
+        if (i % div == 0) {
+          break;
+        }
+        div++;
+
+      }
+      if (div*div >i) {        /*here we are checking that while is run till last but no is not                                             divisible by any so div is increment to extra no means that we                                              can use these case to print prime.*/
+        System.out.println(i);
+      }
+
+
+    }
