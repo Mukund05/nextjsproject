@@ -1,0 +1,62 @@
+[
+    {
+        "name":"iphone",
+        "price":1540,
+        "feature":true,
+        "company":"apple"
+    },
+    {
+        "name":"iphone10",
+        "price":2210,
+        "feature":true,
+        "company":"apple"
+    },
+    {
+        "name":"Narzo 10",
+        "price":1549,
+        "feature":true,
+        "company":"Realme"
+    },
+    {
+        "name":"Redmi Note 10",
+        "price":2299,
+        "feature":true,
+        "company":"Xiomi"
+    },
+    {
+        "name":"iphoneX",
+        "price":1999,
+        "feature":true,
+        "company":"apple"
+    },
+    {
+        "name":"Dell Vostro",
+        "price":5999,
+        "feature":true,
+        "company":"Dell"
+    },
+    {
+        "name":"Macbook Air",
+        "price":9999,
+        "feature":true,
+        "company":"apple"
+    },
+    {
+        "name":"iwatch",
+        "price":199,
+        "feature":true,
+        "company":"apple"
+    },
+    {
+        "name":"Samsung",
+        "price":1994,
+        "feature":true,
+        "company":"Samsung"
+    },
+    {
+        "name":"Yoga Series",
+        "price":5499,
+        "feature":true,
+        "company":"Lenovo"
+    }
+]

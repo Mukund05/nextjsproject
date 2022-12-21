@@ -24,8 +24,8 @@ const ProductSchema=mongoose.Schema({
     company:{
         type:String,
         enum:{
-            values:["apples","google","dell","mi"],
-            message: `${VALUE} is not supported`
+            values:["apple","Samsung","Dell","Xiomi","Realme","Lenovo"],
+            message: `values is not supported`
         },
     },
 });
