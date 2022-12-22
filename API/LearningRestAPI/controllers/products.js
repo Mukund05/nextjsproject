@@ -26,6 +26,15 @@ const getMyproduct = async (req,res)=>{
         // console.log(selectFix);
         apiData=apiData.select(selectFix);
     }
+
+    //pagination
+    let page=Number(req.query.page) || 1;       //requested page no. else default 1st page 
+    let limit=Number(req.query.limit) || 3;     //limit in every page or dafault 3 limit
+
+    let skip=(page-1)*limit;        //skip count for every page how many skip of previous element required
+
+    apiData=apiData.skip(skip).limit(limit);    //
+
     const list=await apiData;
     res.status(200).json({list});
 }
