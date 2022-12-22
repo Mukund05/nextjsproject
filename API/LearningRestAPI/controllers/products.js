@@ -1,6 +1,7 @@
 const Product=require("../models/product");
 const getMyproduct = async (req,res)=>{
-    const list=await Product.find({});
+    // console.log(req.query);
+    const list=await Product.find(req.query);
     res.status(200).json({list});
 }
 const getMyproductToTest = async (req,res)=>{
